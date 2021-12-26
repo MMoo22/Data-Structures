@@ -69,7 +69,7 @@ public:
     ~Stack()
     {
         node *temp = top;
-        while (temp->next != NULL)
+        while (temp != NULL)
         {
             temp = temp->next;
             delete top;
